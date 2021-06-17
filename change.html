@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg Change</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: aqua;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+
+        .inner {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100pxs;
+            flex-direction: column;
+
+        }
+
+        .inner img {
+            margin-top: 100px;
+            width: 400px;
+        }
+
+        .inner button {
+            margin-top: 20px;
+            box-shadow: 0px 0px 0px 2px #9fb4f2;
+            background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+            background-color: #7892c2;
+            border-radius: 10px;
+            border: 1px solid #4e6096;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 19px;
+            padding: 12px 37px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #283966;
+        }
+
+        .inner button:hover {
+            background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+            background-color: #476e9e;
+        }
+
+        .inner button:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <img class="img-animal" src="https://images.unsplash.com/photo-1563460716037-460a3ad24ba9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                alt="">
+        </div>
+        <div class="inner">
+            <button class="btn">Change Img</button>
+            <h1>Text Display</h1>
+        </div>
+    </div>
+<script src="demo.js"></script>
+</body>
+
+</html>
